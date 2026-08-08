@@ -3,3 +3,8 @@
 .DS_Store
 tmp/
 evidencias/generadas/
+report/*.aux
+report/*.log
+report/*.out
+report/*.xdv
+report/main.pdf
