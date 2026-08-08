@@ -1,0 +1,7 @@
+.pio/
+.venv/
+.DS_Store
+tmp/
+output/
+evidencias/generadas/
+

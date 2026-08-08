@@ -1,0 +1,18 @@
+name: Despertar externo por pulsador GPIO33
+version: 1
+author: JdesaG
+steps:
+  - wait-serial: 'BOOT=1'
+  - wait-serial: 'ESTADO=SLEEP'
+  - delay: 1s
+  - set-control:
+      part-id: btnWake
+      control: pressed
+      value: 1
+  - wait-serial: 'CAUSA=pin externo EXT0 (GPIO33)'
+  - set-control:
+      part-id: btnWake
+      control: pressed
+      value: 0
+  - wait-serial: 'CONTADORES timer=0, ext0=1'
+

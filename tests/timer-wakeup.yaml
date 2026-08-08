@@ -1,0 +1,10 @@
+name: Despertar automatico por temporizador RTC
+version: 1
+author: JdesaG
+steps:
+  - wait-serial: 'BOOT=1'
+  - wait-serial: 'ESTADO=ACTIVO'
+  - wait-serial: 'ESTADO=SLEEP'
+  - wait-serial: 'CAUSA=temporizador RTC'
+  - wait-serial: 'CONTADORES timer=1, ext0=0'
+
