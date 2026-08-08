@@ -72,6 +72,13 @@ wokwi-cli . --scenario tests/timer-wakeup.yaml --timeout 30000
 wokwi-cli . --scenario tests/ext0-wakeup.yaml --timeout 30000
 ```
 
+La coherencia local entre firmware, pines y diagrama se comprueba sin servicios
+externos con:
+
+```bash
+python3 tests/validate_project.py
+```
+
 ## Comportamiento esperado
 
 Al despertar de `deep sleep`, el ESP32 reinicia desde `setup()`. La variable
