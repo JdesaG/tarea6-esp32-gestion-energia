@@ -11,6 +11,7 @@ active:
 
 - **Simulacion Wokwi Online:** https://wokwi.com/projects/471748304593999873
 - **Repositorio GitHub:** https://github.com/JdesaG/tarea6-esp32-gestion-energia
+- **Informe PDF:** [output/pdf/Informe_Tarea_6_Gestion_Energia_ESP32.pdf](output/pdf/Informe_Tarea_6_Gestion_Energia_ESP32.pdf)
 
 El contador de arranques y los contadores por causa se guardan en memoria RTC.
 El monitor serial informa cada transicion y un LED RGB muestra el estado:
